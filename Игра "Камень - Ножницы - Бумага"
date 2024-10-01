@@ -1,0 +1,51 @@
+#include <time.h>
+#include <stdio.h>
+
+int main()
+{
+   
+   int counter = 0; // счетчик //
+   int z = 0; // ты(человек) //
+   int x = 0; // компьютер //
+   int chel = 0;
+   int pk = 0;
+   srand(time(0));
+   x = rand()%3+1;
+   while (counter < 10000)
+   {
+      srand(time(0));
+      x = rand()%3+1; 
+      printf("\n\nвыбери камень, ножницы или бумагу\n");
+      printf("1 - камень\n"); 
+      printf("2 - ножницы\n");
+      printf("3 - бумага\n");
+      printf("выбери свое оружие\n");
+      
+      scanf("%d",&z);
+      
+      if (z==x)
+       {
+           chel = chel;
+           pk = pk;
+           printf("НИЧЬЯ!\n");
+           printf("человек(ты) - %d\n", chel);
+           printf("компьютер - %d\n", pk);
+       }
+      if ((x == 1 && z == 2)||(x == 3 && z == 1)||(x == 2 && z == 3))
+      {
+          chel++;
+          printf("победа\n");
+          printf("человек(ты) - %d\n", chel);
+          printf("компьютер - %d\n", pk);
+      }
+      if ((z == 1 && x == 2)||(z == 3 && x == 1)||(z == 2 && x == 3))
+      {
+          pk++;
+          printf("победа\n");
+          printf("человек(ты) - %d\n", chel);
+          printf("компьютер - %d\n", pk);
+      }
+      counter++;
+      
+    }
+}
