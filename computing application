@@ -1,0 +1,51 @@
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    int x = 0;
+    int y = 0;
+    int z = 0;
+    int w = 0;
+    int c = 0;
+    
+    printf ("Введите 5 чисел\n");
+    printf ("Введите число 1 - ");
+    scanf ("%d",&x);
+    printf ("Введите число 2 - ");
+    scanf ("%d",&y);
+    printf ("Введите число 3 - ");
+    scanf ("%d",&z);
+    printf ("Введите число 4 - ");
+    scanf ("%d",&w);
+    printf ("Введите число 5 - ");
+    scanf ("%d",&c);
+    
+    int sum = x+y+z+w+c;
+    int difference = x-y-z-w-c;
+    int product = x*y*z*w*c;
+    
+    
+    printf ("сумма чисел - %d\n", sum);
+    printf ("разность чисел - %d\n", difference);
+    printf ("произведение чисел - %d\n", product);
+    
+    int ostat1 = remainder (x, 10);
+    printf("остаток числа 1 от деления на 10 - %d\n", ostat1);
+    int ostat2 = remainder (y, 10);
+    printf("остаток числа 2 от деления на 10 - %d\n", ostat2);
+    int ostat3 = remainder (z, 10);
+    printf("остаток числа 3 от деления на 10 - %d\n", ostat3);
+    int ostat4 = remainder (w, 10);
+    printf("остаток числа 4 от деления на 10 - %d\n", ostat4);
+    int ostat5 = remainder (c, 10);
+    printf("остаток числа 5 от деления на 10 - %d\n", ostat5);
+    
+    printf("размер переменной числа 1 - %ld байта \n", sizeof(x));
+    printf("размер переменной числа 2 - %ld байта \n", sizeof(y));
+    printf("размер переменной числа 3 - %ld байта \n", sizeof(z));
+    printf("размер переменной числа 4 - %ld байта \n", sizeof(w));
+    printf("размер переменной числа 5 - %ld байта \n", sizeof(c));
+    
+    
+}
